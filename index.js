@@ -41,9 +41,10 @@ var total=0
 }
 
 function removeFromCart(item) {
+  var itemIndex=cart.indexOf
 for (let i=0;i<cart.length;i++){
-  if (cart[i].hasOwnProperty(item)===true){
-    return cart.splice(i,1);
+  if (!cart.indexOf(item)){
+    return cart.splice(itemIndex,1);
   }
 }
 return ("That item is not in your cart.")
