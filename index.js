@@ -41,13 +41,13 @@ var total=0
 }
 
 function removeFromCart(item) {
-  var itemIndex=cart.indexOf
-for (let i=0;i<cart.length;i++){
+
   if (!cart.indexOf(item)){
-    return cart.splice(itemIndex,1);
+    return "That item is not in your cart."
+  } else {
+    var itemIndex=cart.indexOf(item)
+      return cart.splice(itemIndex,1)
   }
-}
-return ("That item is not in your cart.")
 }
 
 function placeOrder(cardNumber) {
