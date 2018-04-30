@@ -17,7 +17,9 @@ return (cart);
 }
 
 function viewCart() {
-  // write your code here
+  if (cart.length===0){
+    return ("Your shopping cart is empty.");
+  } else if ()
 }
 
 function total() {
