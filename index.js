@@ -25,6 +25,11 @@ function viewCart() {
   else if (cart.length===2){
     return (`In your cart, you have ${getCart()[0].itemName} at $${getCart()[0].itemPrice}, and ${getCart()[1].itemName} at $${getCart()[1].itemPrice}.`)
   }
+  else {
+    for (let i=0;i<cart.length;i++){
+      return (`In your cart, you have ${getCart()[0].itemName} at $${getCart()[0].itemPrice}, and ${getCart()[1].itemName} at $${getCart()[1].itemPrice}, and ${getCart()[2].itemname} at $${getCart()[2].itemPrice}.`)
+    }
+  }
   }
 
 function total() {
